@@ -3,7 +3,7 @@
 </p>
 
 <br>
-##### Example
+#### Example
 
 ```python
 from lib.liveodds import Liveodds
@@ -18,9 +18,11 @@ odds = liveodds.odds(races)
 
 ```
 <br>
-##### Structure
+#### Structure
 
 ![json](https://i.postimg.cc/9Q5Z4gtw/json.png)
+
+<br>
 ![json](https://i.postimg.cc/L8pvd8WW/json1.png)
 
 More info in docs
