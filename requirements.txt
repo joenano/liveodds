@@ -1,0 +1,2 @@
+nimporter==1.0.4
+orjson==3.6.6
