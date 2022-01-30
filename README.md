@@ -2,6 +2,21 @@
   <img src="https://i.postimg.cc/1RHL7DTT/liveodds.png">
 </p>
 
+##### Requirements
+To build you will need [Nim](https://nim-lang.org/) compiler, I would recommend using [Choosenim](https://github.com/dom96/choosenim) to install and manage.
+
+[Python](https://www.python.org/downloads/) 3.7 or greater and the [Nimporter](https://github.com/Pebaz/Nimporter) package are required. This can be installed with Pip.
+
+```
+pip install nimporter
+```
+
+Build files are included for compiling the library, or copy and paste from here.
+
+```
+nim c --gc: orc --threads:on --app:lib -d:ssl -d:release --out:lib/odds.so src/odds.nim
+```
+
 ##### Example
 
 ```python
@@ -23,4 +38,4 @@ odds = liveodds.odds(races)
 
 ![json](https://i.postimg.cc/L8pvd8WW/json1.png)
 
-More info in docs
+Will add more examples later, in the meantime, more info in docs.
