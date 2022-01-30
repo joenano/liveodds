@@ -11,11 +11,25 @@ To build you will need [Nim](https://nim-lang.org/) compiler, I would recommend 
 pip install nimporter orjson
 ```
 
+##### Install
+
+```
+git clone https://github.com/joenano/liveodds.git
+```
+
 Build files are included for compiling the library, or copy and paste from here.
 
+
+###### Linux
 ```
 nim c --gc: orc --threads:on --app:lib -d:ssl -d:release --out:lib/odds.so src/odds.nim
 ```
+
+###### Windows
+```
+nim c --gc: orc --threads:on --app:lib --tlsEmulation:off -d:ssl -d:release --out:lib/odds.pyd src/odds.nim
+```
+
 
 ##### Example
 
@@ -31,6 +45,7 @@ races = liveodds.all_races()
 odds = liveodds.odds(races)
 
 ```
+
 
 ##### Structure
 
