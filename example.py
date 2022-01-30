@@ -7,11 +7,7 @@ from lib.liveodds import Liveodds
 
 liveodds = Liveodds()
 
-races = liveodds.all_races()
+odds = liveodds.json()
 
-odds = liveodds.odds(races)
-
-json = dumps(odds).decode('utf-8')
-
-with open('odds.json', 'w') as f:
-    f.write(json)
+with open('odds.json', 'w', encoding='utf-8') as f:
+    f.write(odds)
