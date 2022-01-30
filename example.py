@@ -11,11 +11,7 @@ races = liveodds.all_races()
 
 odds = liveodds.odds(races)
 
-for day in odds:
-    for region in odds[day]:
-        for meeting in odds[day][region]:
-            print(meeting)
+json = dumps(odds).decode('utf-8')
 
-# json = dumps(odds).decode('utf-8')
-
-# print(json)
+with open('odds.json', 'w') as f:
+    f.write(json)
