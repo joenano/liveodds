@@ -56,7 +56,7 @@ proc getOdds(races: seq[Race]): Future[TableOdds] {.async.} =
   
     for i in 0..len(runners)-2:
       let name = findElement(runners[i], "div", "class", "racecard__runner__name")
-      let horse = name.child("div").innerText.replace("'", "")
+      let horse = name.child("div").innerText.replace("'", "").split("(")[0].strip()
       let odds = elementsWithAttribue(runners[i], "ruk-odd", "data-js-odds-decimal")
 
       for book in odds:
