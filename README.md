@@ -5,10 +5,10 @@
 ##### Requirements
 To build you will need [Nim](https://nim-lang.org/) compiler, I would recommend using [Choosenim](https://github.com/dom96/choosenim) to install and manage.
 
-[Python](https://www.python.org/downloads/) 3.7 or greater and the [Nimporter](https://github.com/Pebaz/Nimporter) package are required. This can be installed with Pip.
+[Python](https://www.python.org/downloads/) 3.7 or greater and the [Nimporter](https://github.com/Pebaz/Nimporter) and [orjson](https://github.com/ijl/orjson) packages are required. These can be installed with Pip.
 
 ```
-pip install nimporter
+pip install nimporter orjson
 ```
 
 Build files are included for compiling the library, or copy and paste from here.
