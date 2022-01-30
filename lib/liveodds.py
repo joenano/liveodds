@@ -3,14 +3,6 @@
 import nimporter
 import lib.odds as odds
 
-import sys
-
-# import platform
-# if platform.system() == 'Linux':
-#     import lib.odds_linux as odds
-# elif platform.system() == 'Windows':
-#     import lib.odds_win as odds
-
 from dataclasses import dataclass, astuple
 from orjson import dumps
 
